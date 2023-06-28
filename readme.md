@@ -39,8 +39,9 @@ Environment Ready !!!
 
 ## How to satrt
 
-```xml
 in this project run
+
+```xml
 1. yarn install
 2. yarn run start
 ```
@@ -52,6 +53,8 @@ TBD
 ```
 
 ## How to deploy
+
+in this project run
 
 ```xml
 yarn run deploy
