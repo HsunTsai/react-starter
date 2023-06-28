@@ -1,4 +1,4 @@
-import { COUNT_CHANGE } from './homeAction';
+import { COUNT_CHANGE } from './reduxSampleAction';
 
 const INITIAL_STATE = {
 	count: 0,

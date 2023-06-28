@@ -11,9 +11,19 @@ import './app.scss';
 
 const pages = [
 	{
-		path: '/home',
-		name: 'Home',
-		component: Loadable({ loader: () => import('./pages/home/Home'), loading: RouterLoading }),
+		path: '/playground',
+		name: 'Playground',
+		component: Loadable({ loader: () => import('./pages/playground/Playground'), loading: RouterLoading }),
+	},
+	{
+		path: '/i18n',
+		name: 'I18N',
+		component: Loadable({ loader: () => import('./pages/i18n/I18N'), loading: RouterLoading }),
+	},
+	{
+		path: '/redux',
+		name: 'ReduxSample',
+		component: Loadable({ loader: () => import('./pages/reduxSample/ReduxSample'), loading: RouterLoading }),
 	},
 	{
 		path: '/about',

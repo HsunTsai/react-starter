@@ -1,5 +1,5 @@
 import app from './appReducer';
-import home from './pages/home/homeReducer';
+import reduxSample from './pages/reduxSample/reduxSampleReducer';
 // ex. import newReducer from './newReducer'
 
 const rootReducer = reducers => {
@@ -28,7 +28,7 @@ const rootReducer = reducers => {
 // 將要用的reducer都放入下方object
 const reducers = rootReducer({
 	app,
-	home,
+	reduxSample,
 });
 
 export default reducers;
