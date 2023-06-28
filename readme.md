@@ -1,18 +1,19 @@
 # React Start Kit
+
 A React Starter with webpack
 
-- i18n
-- antd
-- Router
-- Redux
+-   i18n
+-   antd
+-   Router
+-   Redux
 
 # Environment
 
-- NodeJs (this project use v14.17.2)
-- Yarn (https://classic.yarnpkg.com/)
+-   NodeJs (this project use v14.17.2)
+-   Yarn (https://classic.yarnpkg.com/)
 
 ```xml
-install nvm 
+install nvm
 - [windows] (https://github.com/coreybutler/nvm-windows/releases)
 - [Linux]
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
@@ -20,6 +21,7 @@ install nvm
 ```
 
 After install nvm
+
 ```xml
 1. nvm install 14.17.2
 2. nvm use 14.17.2
@@ -29,8 +31,14 @@ After install nvm
 Environment Ready !!!
 ```
 
+## VSCode suggest plugin
+
+1. ES7+ React/Redux/React-Native snippets
+2. ESLint
+3. Prettier - Code formatter
 
 ## How to satrt
+
 ```xml
 in this project run
 1. yarn install
@@ -38,12 +46,13 @@ in this project run
 ```
 
 ## How to setup your backend Server
+
 ```xml
 TBD
 ```
 
 ## How to deploy
+
 ```xml
 yarn run deploy
 ```
-
