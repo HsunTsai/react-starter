@@ -21,6 +21,7 @@
 		"react-loadable": "5.5.0",
 		"react-redux": "7.2.9",
 		"react-router-dom": "5.2.0",
+		"redux": "4.2.1",
 		"redux-thunk": "2.4.2"
 	},
 	"devDependencies": {
@@ -29,7 +30,19 @@
 		"@babel/preset-react": "^7.22.5",
 		"babel-loader": "^9.1.2",
 		"css-loader": "^6.8.1",
+		"eslint": "7.5.0",
+		"eslint-config-airbnb": "18.2.1",
+		"eslint-config-node": "4.1.0",
+		"eslint-config-prettier": "8.3.0",
+		"eslint-loader": "4.0.2",
+		"eslint-plugin-import": "2.22.1",
+		"eslint-plugin-jsx-a11y": "6.4.1",
+		"eslint-plugin-node": "11.1.0",
+		"eslint-plugin-prettier": "3.4.0",
+		"eslint-plugin-react": "7.21.5",
+		"eslint-plugin-react-hooks": "1.7.0",
 		"html-webpack-plugin": "^5.5.3",
+		"prettier": "2.3.2",
 		"sass": "^1.63.6",
 		"sass-loader": "^13.3.2",
 		"style-loader": "^3.3.3",
@@ -39,6 +52,7 @@
 		"webpack-dev-server": "^4.15.1"
 	},
 	"scripts": {
+		"lint": "eslint ./src/**/*.{js,jsx}",
 		"start": "webpack serve --mode development",
 		"deploy": "webpack --mode production"
 	}

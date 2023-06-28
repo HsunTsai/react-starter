@@ -32,7 +32,7 @@ const baseConfig = isProd => {
 				{
 					test: /\.(js|jsx)$/, // .js and .jsx files
 					exclude: /node_modules/, // excluding the node_modules folder
-					use: { loader: 'babel-loader' },
+					use: ['babel-loader', 'eslint-loader'],
 				},
 				// styles files
 				{ test: /\.(sa|sc|c)ss$/, use: ['style-loader', 'css-loader', 'sass-loader'] },

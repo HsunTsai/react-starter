@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { createRoot } from 'react-dom/client';
 
 import App from './app/App';
 import IndexProvider from './app/IndexProvider';
@@ -7,7 +8,6 @@ import services from './app/config/services';
 
 import './index.scss';
 
-import { createRoot } from 'react-dom/client';
 const container = document.getElementById('app');
 const root = createRoot(container);
 root.render(

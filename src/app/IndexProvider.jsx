@@ -15,9 +15,7 @@ const store = createStore(rootReducer, applyMiddleware(thunk));
 
 const IndexProvider = ({ match, history, children }) => {
 	const [i18n, setI18n] = useState();
-	const {
-		params: { locale },
-	} = match;
+	const { locale } = match?.params || {};
 
 	useEffect(() => {
 		/* 檢查 語系最常不會超過9字元 => https://github.com/ladjs/i18n-locales

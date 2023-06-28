@@ -11,9 +11,7 @@ const { Option } = Select;
 
 const Header = ({ pages }) => {
 	const history = useHistory();
-	const {
-		params: { locale },
-	} = useRouteMatch();
+	const { locale } = useRouteMatch()?.params;
 
 	return (
 		<div className="header">

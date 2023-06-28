@@ -27,9 +27,9 @@ const Home = ({ count, actionCountUp, actionCountDown }) => {
 			{/* Intl - two types formater for demo */}
 			<div className={classNames('home-box', 'home-box__intl')}>
 				<div className="home-box__intl-title">Intl Demo</div>
-				<div>{`Type 1 [ <FormattedMessage id='xxx' values={{ xxx: 'xxx' }} /> ]`}</div>
+				<div>{"Type 1 [ <FormattedMessage id='xxx' values={{ xxx: 'xxx' }} /> ]"}</div>
 				<FormattedMessage id="superHello" values={{ someoneName: 'Hsun.Tsai' }} />
-				<div>{`Type 2 [ useIntl().formatMessage({ id='xxx' }, { xxx= 'xxx' }) ]`}</div>
+				<div>{"Type 2 [ useIntl().formatMessage({ id='xxx' }, { xxx= 'xxx' }) ]"}</div>
 				{formatMessage({ id: 'superHello' }, { someoneName: 'Hsun.Tsai' })}
 			</div>
 
@@ -61,11 +61,9 @@ const mapStateToProps = state => {
 	return { count };
 };
 
-const mapDispatchToProps = dispatch => {
-	return {
-		actionCountUp: count => dispatch(countUp(count)),
-		actionCountDown: count => dispatch(countDown(count)),
-	};
-};
+const mapDispatchToProps = dispatch => ({
+	actionCountUp: count => dispatch(countUp(count)),
+	actionCountDown: count => dispatch(countDown(count)),
+});
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home);
