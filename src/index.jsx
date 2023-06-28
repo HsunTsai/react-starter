@@ -5,7 +5,7 @@ import App from './app/App';
 import IndexProvider from './app/IndexProvider';
 import services from './app/config/services';
 
-import './scss/index.scss';
+import './index.scss';
 
 import { createRoot } from 'react-dom/client';
 const container = document.getElementById('app');

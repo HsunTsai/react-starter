@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Button, Checkbox, DatePicker } from 'antd';
 import { useHistory } from 'react-router-dom';
 
+import './topic.scss';
+
 const { RangePicker } = DatePicker;
 
 const options = [

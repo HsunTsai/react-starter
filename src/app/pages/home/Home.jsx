@@ -6,6 +6,8 @@ import { Button } from 'antd';
 import classNames from 'classnames';
 import { countDown, countUp } from './homeAction';
 
+import './home.scss';
+
 const Home = ({ count, actionCountUp, actionCountDown }) => {
 	const [active, setActive] = useState(false);
 	const { formatMessage } = useIntl();

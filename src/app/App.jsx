@@ -7,6 +7,8 @@ import Loadable from 'react-loadable';
 import Header from './components/header/Header';
 import RouterLoading from './components/loading/Loading';
 
+import './app.scss';
+
 const pages = [
 	{
 		path: '/home',
