@@ -3,7 +3,13 @@
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
-	"keywords": [],
+	"keywords": [
+		"react",
+		"i18n",
+		"Router",
+		"Redux",
+		"antd"
+	],
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
