@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { NavLink, useRouteMatch, useHistory } from 'react-router-dom';
 import { Select } from 'antd';
-import { changeLang, checkLanguageSupport, supportLanguages } from '../../actions/app';
+import { changeLang, checkLanguageSupport, supportLanguages } from '../../appAction';
 import ReactIcon from '../../../images/react_logo.png';
 
 import './header.scss';

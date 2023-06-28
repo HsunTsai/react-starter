@@ -1,4 +1,4 @@
-import { COUNT_CHANGE } from '../actions/home';
+import { COUNT_CHANGE } from './homeAction';
 
 const INITIAL_STATE = {
 	count: 0,

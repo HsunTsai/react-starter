@@ -1,5 +1,5 @@
-import app from './app';
-import home from './home';
+import app from './appReducer';
+import home from './pages/home/homeReducer';
 // ex. import newReducer from './newReducer'
 
 const rootReducer = reducers => {
@@ -29,7 +29,6 @@ const rootReducer = reducers => {
 const reducers = rootReducer({
 	app,
 	home,
-	// topic,
 });
 
 export default reducers;

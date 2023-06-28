@@ -11,17 +11,17 @@ const pages = [
 	{
 		path: '/home',
 		name: 'Home',
-		component: Loadable({ loader: () => import('./containers/Home'), loading: RouterLoading }),
+		component: Loadable({ loader: () => import('./pages/home/Home'), loading: RouterLoading }),
 	},
 	{
 		path: '/about',
 		name: 'About',
-		component: Loadable({ loader: () => import('./containers/About'), loading: RouterLoading }),
+		component: Loadable({ loader: () => import('./pages/about/About'), loading: RouterLoading }),
 	},
 	{
 		path: '/topic',
 		name: 'Topic',
-		component: Loadable({ loader: () => import('./containers/Topic'), loading: RouterLoading }),
+		component: Loadable({ loader: () => import('./pages/topic/Topic'), loading: RouterLoading }),
 	},
 ];
 

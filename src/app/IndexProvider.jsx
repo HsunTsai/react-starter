@@ -6,10 +6,10 @@ import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
 import axios from 'axios';
 
-import rootReducer from './reducers/index';
+import rootReducer from './rootReducer';
 import Loading from './components/loading/Loading';
 import services from './config/services';
-import { changeLang, supportLanguages } from './actions/app';
+import { changeLang, supportLanguages } from './appAction';
 
 const store = createStore(rootReducer, applyMiddleware(thunk));
 

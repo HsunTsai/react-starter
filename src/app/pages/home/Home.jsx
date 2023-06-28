@@ -4,7 +4,7 @@ import { FormattedMessage, useIntl } from 'react-intl';
 import { connect } from 'react-redux';
 import { Button } from 'antd';
 import classNames from 'classnames';
-import { countDown, countUp } from '../actions/home';
+import { countDown, countUp } from './homeAction';
 
 const Home = ({ count, actionCountUp, actionCountDown }) => {
 	const [active, setActive] = useState(false);
