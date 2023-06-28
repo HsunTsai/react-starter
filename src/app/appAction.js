@@ -12,9 +12,7 @@ export const checkLanguageSupport = language => {
 
 /* 變更語系 */
 export const changeLang = ({ history, currentLanguage, nextLanguage }) => {
-	const {
-		location: { pathname, search },
-	} = history;
+	const { pathname, search } = history?.location || {};
 
 	/* 檢查網址中是否有語系存在 */
 	if (currentLanguage && pathname.startsWith(`/${currentLanguage}`)) {
@@ -25,9 +23,8 @@ export const changeLang = ({ history, currentLanguage, nextLanguage }) => {
 		});
 	} else {
 		/* 不存在 => 推入瀏覽器預設語系 */
-		const browserLanguage = (navigator.languages
-			? navigator.languages[0]
-			: navigator.language || navigator.userLanguage
+		const browserLanguage = (
+			navigator.languages ? navigator.languages[0] : navigator.language || navigator.userLanguage
 		).toLowerCase();
 		history.push({ pathname: `/${checkLanguageSupport(browserLanguage)}${pathname}`, search });
 	}

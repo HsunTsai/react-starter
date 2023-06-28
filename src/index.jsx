@@ -14,7 +14,7 @@ root.render(
 	<BrowserRouter basename={services.getContextRoot}>
 		<Switch>
 			<Route
-				path="/:locale" // ? => unnecessary
+				path="/:locale?" // ? => unnecessary
 				render={props => (
 					<IndexProvider {...props}>
 						<App />
