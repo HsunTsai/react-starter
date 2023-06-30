@@ -26,6 +26,11 @@ const pages = [
 		component: Loadable({ loader: () => import('./pages/reduxSample/ReduxSample'), loading: RouterLoading }),
 	},
 	{
+		path: '/redux-legacy',
+		name: 'LegacyReduxSample',
+		component: Loadable({ loader: () => import('./pages/reduxSample/LegacyReduxSample'), loading: RouterLoading }),
+	},
+	{
 		path: '/about',
 		name: 'About',
 		component: Loadable({ loader: () => import('./pages/about/About'), loading: RouterLoading }),

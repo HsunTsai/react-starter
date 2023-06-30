@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-// import PropTypes from 'prop-types';
+import { Button } from 'antd';
 
 import './playground.scss';
-import { Button } from 'antd';
 
 const Playground = () => {
 	const [count, setCount] = useState(0);

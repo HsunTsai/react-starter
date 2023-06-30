@@ -5,13 +5,14 @@ import { countDown, countUp } from './reduxSampleAction';
 
 import './reduxSample.scss';
 
-const Home = () => {
+const ReduxSample = () => {
 	const dispatch = useDispatch();
 	const { count } = useSelector(state => state?.reduxSample);
 
 	return (
 		<div className="reduxSample">
-			<h2>這是一個透過redux操作的範例</h2>
+			<h2>這是一個透過 redux 操作的範例</h2>
+			<h3>使用 Hook 的 redux</h3>
 			<h3>{`Now Count ==> ${count}`}</h3>
 			<div>
 				<Button style={{ marginRight: 8 }} onClick={() => dispatch(countUp(count))}>
@@ -23,4 +24,4 @@ const Home = () => {
 	);
 };
 
-export default Home;
+export default ReduxSample;
