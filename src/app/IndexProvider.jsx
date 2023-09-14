@@ -9,6 +9,7 @@ import axios from 'axios';
 import rootReducer from './rootReducer';
 import Loading from './components/loading/Loading';
 import services from './config/services';
+import IntlGlobalProvider from './IntlGlobalProvider';
 import { changeLang, supportLanguages } from './appAction';
 
 const store = createStore(rootReducer, applyMiddleware(thunk));
@@ -38,8 +39,8 @@ const IndexProvider = ({ match, history, children }) => {
 
 	return i18n ? (
 		<Provider store={store}>
-			<IntlProvider locale={i18n.locale} messages={i18n.messages}>
-				{children}
+			<IntlProvider key={i18n.locale} locale={i18n.locale} messages={i18n.messages}>
+				<IntlGlobalProvider>{children}</IntlGlobalProvider>
 			</IntlProvider>
 		</Provider>
 	) : (

@@ -1,11 +1,11 @@
 import React from 'react';
 import { Collapse } from 'antd';
-import { FormattedMessage, useIntl } from 'react-intl';
+import { getIntl } from '../../IntlGlobalProvider';
 
 import './i18n.scss';
 
 const I18N = () => {
-	const { formatMessage } = useIntl();
+	const { formatMessage, FormattedMessage } = getIntl();
 
 	return (
 		<div className="i18n">

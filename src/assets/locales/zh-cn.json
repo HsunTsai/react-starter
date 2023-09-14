@@ -1,0 +1,7 @@
+{
+	"hello": "哈啰 !",
+	"superHello": "哈啰 ! { someoneName } !",
+
+	"bigger.than.five.hint": "数字不可以超过 5",
+	"smaller.than.zero.hint": "数字不可以小于 0"
+}

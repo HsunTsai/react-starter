@@ -5,6 +5,7 @@ const package = require('./package.json');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin')
 
 // 基本config (正式及開發環境共用config)
 const baseConfig = isProd => {
@@ -60,9 +61,9 @@ module.exports = param => {
 				new CleanWebpackPlugin(['dist/*'], { root: path.join(__dirname, '/') }),
 				new CopyWebpackPlugin({
 					patterns: [
-						{ from: 'src/images', to: 'images' },
-						{ from: 'src/data', to: 'data' },
-						{ from: 'src/locales', to: 'locales' },
+						{ from: 'src/assets/images', to: 'images' },
+						{ from: 'src/assets/data', to: 'data' },
+						{ from: 'src/assets/locales', to: 'locales' },
 						{ from: 'web.config', to: 'web.config' },
 					],
 				}),
@@ -73,9 +74,13 @@ module.exports = param => {
 		return merge(baseConfig(isProd), {
 			devServer: {
 				port: 9999,
-				static: './src',
+				static: './src/assets',
+				hot: true,
 				historyApiFallback: true,
 			},
+			plugins: [
+				new ReactRefreshWebpackPlugin(),
+			],
 		});
 	}
 };

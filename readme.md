@@ -9,7 +9,7 @@ A React Starter with webpack
 
 # Environment
 
--   NodeJs (this project use v14.17.2)
+-   NodeJs (this project use v18.17.1)
 -   Yarn (https://classic.yarnpkg.com/)
 
 ```xml
@@ -23,8 +23,8 @@ install nvm
 After install nvm
 
 ```xml
-1. nvm install 14.17.2
-2. nvm use 14.17.2
+1. nvm install 18.17.1
+2. nvm use 18.17.1
 3. node -v (to check node install status)
 4. npm install -g yarn
 

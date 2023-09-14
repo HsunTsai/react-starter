@@ -10,17 +10,25 @@ import './index.scss';
 
 const container = document.getElementById('app');
 const root = createRoot(container);
-root.render(
-	<BrowserRouter basename={services.getContextRoot}>
-		<Switch>
-			<Route
-				path="/:locale?" // ? => unnecessary
-				render={props => (
-					<IndexProvider {...props}>
-						<App />
-					</IndexProvider>
-				)}
-			/>
-		</Switch>
-	</BrowserRouter>
-);
+const render = () =>
+	root.render(
+		<BrowserRouter basename={services.getContextRoot}>
+			<Switch>
+				<Route
+					path="/:locale?" // ? => unnecessary
+					render={props => (
+						<IndexProvider {...props}>
+							<App />
+						</IndexProvider>
+					)}
+				/>
+			</Switch>
+		</BrowserRouter>
+	);
+
+render();
+if (module.hot) {
+	module.hot.accept('./app/App', () => {
+		render();
+	});
+}

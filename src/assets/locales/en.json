@@ -1,0 +1,7 @@
+{
+	"hello": "Hello !",
+	"superHello": "Hello ! { someoneName } !",
+
+	"bigger.than.five.hint": "Count can not bigger than 5",
+	"smaller.than.zero.hint": "Count can not smaller than 0"
+}
